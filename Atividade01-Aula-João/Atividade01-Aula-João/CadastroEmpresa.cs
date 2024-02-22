@@ -71,7 +71,7 @@ namespace Atividade01_Aula_João
                     novoEmpresa.razaoSocial = textBox2.Text;
                     novoEmpresa.cnpj = maskedTextBox1.Text;
                     novoEmpresa.situacaoCadastral = comboBox1.Text;
-                    novoEmpresa.cpfProprietario = textBox14.Text;
+                    novoEmpresa.cpfProprietario = textBox8.Text;
                     novoEmpresa.telefone = maskedTextBox3.Text;
                     novoEmpresa.capitalSocial = textBox8.Text;
                     novoEmpresa.endereco = textBox9.Text;
@@ -79,25 +79,25 @@ namespace Atividade01_Aula_João
                     novoEmpresa.naturezaJuridica = comboBox2.Text;
                     novoEmpresa.tipo = groupBox1.Text;
                     novoEmpresa.data = maskedTextBox2.Text;
-                    novoEmpresa.porte = groupBox2.Text;
+                    novoEmpresa.porte = groupBox1.Text;
                     novoEmpresa.regime = groupBox3.Text;
 
                 }
                 MessageBox.Show("Funcionário cadastrado com sucesso!", "Cadastro efetuado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MessageBox.Show($"CNPJ = {cnpj}\n"
-                    + $"Razão Social:{razao}\n"
-                    + $"Nome Fatasia:{nomeFantasia}\n"
-                    + $"Situação:{Situacao}\n"
-                    + $"Regime Tributário:{regimetri}\n"
-                    + $"Data de iníco:{datainicio}\n"
-                    + $"Telefone:{telefone}\n"
-                    + $"Capital:{capital}\n"
-                    + $"Endereço:{endereço}\n"
-                    + $"Tipo:{tipo}\n"
-                    + $"Porte da Empresa:{porteempresa}\n"
-                    + $"Juridica:{juridica}\n"
-                    + $"Propreteratio:{propretario}\n"
-                    + $"Cpf do propretério:{cpfpropretario}\n");
+                MessageBox.Show($"CNPJ = {maskedTextBox1.Text}\n"
+                    + $"Razão Social:{textBox2.Text}\n"
+                    + $"Nome Fatasia:{textnome.Text}\n"
+                    + $"Situação:{comboBox1.Text}\n"
+                    + $"Regime Tributário:{groupBox3.Text}\n"
+                    + $"Data de iníco:{maskedTextBox2.Text}\n"
+                    + $"Telefone:{maskedTextBox3.Text}\n"
+                    + $"estado:{comboBox3.Text}\n"
+                    + $"estado: {comboBox3.Text}\n"
+                    + $"Tipo:{groupBox1.Text}\n"
+                    + $"Porte da Empresa:{groupBox1.Text}\n"
+                    + $"Juridica:{textBox8.Text}\n"
+                    + $"Propreteratio:{textBox8.Text}\n"
+                    + $"Cpf do propretério:{textBox13.Text}\n");
             }
 
 
@@ -107,6 +107,21 @@ namespace Atividade01_Aula_João
         }
 
         private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox13_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
 
         }
